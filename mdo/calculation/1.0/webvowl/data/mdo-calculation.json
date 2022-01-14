@@ -219,12 +219,12 @@
     },
     "id" : "4"
   }, {
-    "iri" : "https://w3id.org/mdo/calculation/HybridmetaGeneralizedGradientApproximation",
+    "iri" : "https://w3id.org/mdo/calculation/HybridMetaGeneralizedGradientApproximation",
     "baseIri" : "https://w3id.org/mdo/calculation",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "HybridmetaGeneralizedGradientApproximation",
-      "en" : "Hybrid meta Generalized Gradient Approximation"
+      "IRI-based" : "HybridMetaGeneralizedGradientApproximation",
+      "en" : "Hybrid Meta Generalized Gradient Approximation"
     },
     "comment" : {
       "en" : "A hybrid meta generalized gradient approximation is a classification of exchange correlation energy functionals that combine exact exchange from Hartree–Fock theory with meta generalized gradient approximation."
@@ -272,15 +272,15 @@
     "attributes" : [ "external" ],
     "id" : "8"
   }, {
-    "iri" : "https://w3id.org/mdo/calculation/metaGeneralizedGradientApproximation",
+    "iri" : "https://w3id.org/mdo/calculation/MetaGeneralizedGradientApproximation",
     "baseIri" : "https://w3id.org/mdo/calculation",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "metaGeneralizedGradientApproximation",
-      "en" : "meta Generalized Gradient Approximation"
+      "IRI-based" : "MetaGeneralizedGradientApproximation",
+      "en" : "Meta Generalized Gradient Approximation"
     },
     "comment" : {
-      "en" : "A metaGeneralizedGradientApproximation is a classification of exchange correlation energy functionals that only use the local value of the electronic density and its gradient and the Kohn–Sham orbital kinetic energy density."
+      "en" : "A MetaGeneralizedGradientApproximation is a classification of exchange correlation energy functionals that only use the local value of the electronic density and its gradient and the Kohn–Sham orbital kinetic energy density."
     },
     "id" : "30",
     "superClasses" : [ "16" ]
@@ -456,7 +456,7 @@
       "en" : "Local Density Approximation"
     },
     "comment" : {
-      "en" : "An LDA is a classification of exchange correlation energy functionals that only use the local value of the electronic density."
+      "en" : "A LDA is a classification of exchange correlation energy functionals that only use the local value of the electronic density."
     },
     "id" : "33",
     "superClasses" : [ "16" ]
