@@ -34,7 +34,7 @@
       "license" : [ {
         "identifier" : "license",
         "language" : "undefined",
-        "value" : "https://github.com/huanyu-li/Materials-Design-Ontology/blob/master/LICENSE",
+        "value" : "https://github.com/LiUSemWeb/Materials-Design-Ontology/blob/master/LICENSE",
         "type" : "label"
       } ],
       "creator" : [ {
@@ -87,7 +87,7 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://github.com/huanyu-li/Materials-Design-Ontology",
+        "value" : "https://github.com/LiUSemWeb/Materials-Design-Ontology",
         "type" : "label"
       } ]
     }

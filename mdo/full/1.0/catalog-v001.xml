@@ -5,6 +5,6 @@
     <uri id="Imports Wizard Entry" name="https://w3id.org/mdo/structure/1.0" uri="https://w3id.org/mdo/structure"/>
     <uri id="Imports Wizard Entry" name="https://w3id.org/mdo/core/1.0" uri="https://w3id.org/mdo/core"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1597350045553" name="https://w3id.org/mdo/full/" uri="mdo-full.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1642170878290" name="https://w3id.org/mdo/full/" uri="mdo-full.owl"/>
     </group>
 </catalog>
