@@ -238,8 +238,8 @@
       "IRI-based" : "string"
     }
   }, {
-    "iri" : "http://qudt.org/vocab/unit/Unit",
-    "baseIri" : "http://qudt.org/vocab/unit",
+    "iri" : "http://qudt.org/schema/qudt/Unit",
+    "baseIri" : "http://qudt.org/schema/qudt",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Unit"
