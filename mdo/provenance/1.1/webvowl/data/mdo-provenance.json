@@ -2,14 +2,17 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.7), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "en", "undefined" ],
-    "baseIris" : [ "https://w3id.org/mdo/provenance", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://w3id.org/mdo/core", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/ns/prov", "http://www.w3.org/2001/XMLSchema" ],
+    "baseIris" : [ "https://w3id.org/mdo/provenance", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://qudt.org/schema/qudt", "https://w3id.org/mdo/core", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/ns/prov", "http://www.w3.org/2001/XMLSchema" ],
     "prefixList" : {
       "owl" : "http://www.w3.org/2002/07/owl#",
+      "emmo" : "http://emmo.info/domains/emmo-material.owl#",
       "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
       "vann" : "http://purl.org/vocab/vann/",
+      "qudt-unit" : "http://qudt.org/vocab/unit/",
       "dcterms" : "http://purl.org/dc/terms/",
       "xsd" : "http://www.w3.org/2001/XMLSchema#",
-      "" : "https://w3id.org/mdo/provenance/",
+      "qudt" : "http://qudt.org/schema/qudt/",
+      "" : "https://w3id.org/mdo/core/",
       "xml" : "http://www.w3.org/XML/1998/namespace",
       "rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
     },
@@ -38,12 +41,12 @@
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "Rickard Armiento",
+        "value" : "Patrick Lambrix",
         "type" : "label"
       }, {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "Patrick Lambrix",
+        "value" : "Rickard Armiento",
         "type" : "label"
       } ],
       "created" : [ {
@@ -58,16 +61,16 @@
         "value" : "provenance",
         "type" : "label"
       } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
-        "language" : "undefined",
-        "value" : "1.1",
-        "type" : "label"
-      } ],
       "preferredNamespaceUri" : [ {
         "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
         "value" : "https://w3id.org/mdo/provenance/1.1/",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.1",
         "type" : "label"
       } ],
       "title" : [ {
@@ -86,131 +89,292 @@
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "0",
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "30",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "32",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "21",
     "type" : "owl:Class"
   }, {
     "id" : "1",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "5",
     "type" : "owl:Class"
   }, {
-    "id" : "2",
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "6",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "7",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "8",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "9",
+    "id" : "38",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "12",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "13",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "16",
-    "type" : "owl:Class"
-  }, {
-    "id" : "5",
+    "id" : "29",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "4",
+    "id" : "41",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
     "type" : "owl:Class"
   }, {
     "id" : "15",
     "type" : "owl:Class"
   }, {
-    "id" : "18",
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
-    "iri" : "https://w3id.org/mdo/core/Structure",
-    "baseIri" : "https://w3id.org/mdo/core",
+    "iri" : "http://qudt.org/schema/qudt/Unit",
+    "baseIri" : "http://qudt.org/schema/qudt",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Structure"
+      "IRI-based" : "Unit"
     },
+    "individuals" : [ {
+      "iri" : "http://qudt.org/vocab/unit/EV",
+      "baseIri" : "http://qudt.org/vocab/unit",
+      "labels" : {
+        "IRI-based" : "EV"
+      }
+    }, {
+      "iri" : "http://qudt.org/vocab/unit/GM-PER-CentiM3",
+      "baseIri" : "http://qudt.org/vocab/unit",
+      "labels" : {
+        "IRI-based" : "GM-PER-CentiM3"
+      }
+    } ],
     "attributes" : [ "external" ],
-    "id" : "0"
-  }, {
-    "iri" : "https://w3id.org/mdo/core/Property",
-    "baseIri" : "https://w3id.org/mdo/core",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Property"
-    },
-    "attributes" : [ "external" ],
-    "id" : "1"
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "2",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "6",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "7",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "8",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "9",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "12",
-    "label" : {
-      "IRI-based" : "dateTime"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "13",
-    "label" : {
-      "undefined" : "Thing"
-    }
+    "id" : "8"
   }, {
     "iri" : "https://w3id.org/mdo/core/Calculation",
     "baseIri" : "https://w3id.org/mdo/core",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Calculation"
+      "IRI-based" : "Calculation",
+      "en" : "Calculation"
+    },
+    "comment" : {
+      "en" : "A calculation is the use of a specific computational method to process structures and/or properties into output structures and/or calculated properties."
     },
     "attributes" : [ "external" ],
-    "id" : "16"
+    "id" : "7"
+  }, {
+    "iri" : "https://w3id.org/mdo/core/CalculatedProperty",
+    "baseIri" : "https://w3id.org/mdo/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CalculatedProperty",
+      "en" : "Calculated Property"
+    },
+    "comment" : {
+      "en" : "A calculated property is a proprty that is a result from a calculation."
+    },
+    "attributes" : [ "external" ],
+    "id" : "17",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "19",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "30",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "32",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Agent",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent"
+    },
+    "subClasses" : [ "15", "21" ],
+    "attributes" : [ "external" ],
+    "id" : "25"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "5",
+    "id" : "22",
     "label" : {
       "IRI-based" : "string"
     }
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#SoftwareAgent",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SoftwareAgent"
+    },
+    "attributes" : [ "external" ],
+    "id" : "21",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "1",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "33",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "https://w3id.org/mdo/core/Structure",
+    "baseIri" : "https://w3id.org/mdo/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Structure",
+      "en" : "Structure"
+    },
+    "comment" : {
+      "en" : "A structure is the information of the sites and their occupancies in a material or materials system."
+    },
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "https://w3id.org/mdo/core/Property",
+    "baseIri" : "https://w3id.org/mdo/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Property",
+      "en" : "Property"
+    },
+    "subClasses" : [ "17", "27" ],
+    "comment" : {
+      "en" : "A property in materials design is data pertaining to at least one material or materials system, representing a quantifiable aspect of one material or materials system. It is specialized into the disjoint concepts CalculatedProperty and PhysicalProperty"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "36",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "38",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "16",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://qudt.org/schema/qudt/Quantity",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Quantity"
+    },
+    "subClasses" : [ "4" ],
+    "attributes" : [ "external" ],
+    "id" : "10"
   }, {
     "iri" : "https://w3id.org/mdo/provenance/ReferenceAgent",
     "baseIri" : "https://w3id.org/mdo/provenance",
@@ -222,191 +386,450 @@
     "comment" : {
       "en" : "A reference agent is the representation of the reference that the structure or property refer to."
     },
-    "id" : "4",
-    "superClasses" : [ "15" ]
+    "id" : "15",
+    "superClasses" : [ "25" ]
   }, {
-    "iri" : "http://www.w3.org/ns/prov#Agent",
-    "baseIri" : "http://www.w3.org/ns/prov",
+    "iri" : "https://w3id.org/mdo/core/PhysicalProperty",
+    "baseIri" : "https://w3id.org/mdo/core",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Agent"
+      "IRI-based" : "PhysicalProperty",
+      "en" : "Physical Property"
     },
-    "subClasses" : [ "4", "18" ],
+    "comment" : {
+      "en" : "A physical property is an objective property over a physical system (i.e., something that at least in principle can be measured in an experiment). Note that PhysicalProperty does not represent the outcome of such a measurement, only the abstract notion of the property. \nFor example, let OpticalBandGap be a sub-concept of PhysicalProperty to represent the physically measurable threshold for photons absorbed by a \nmaterial. Next, consider a calculation based on the DensityFunctionalTheoryMethod in the Calculation module using the  HybridGeneralizedGradientApproximation Heyd-Scuseria-Ernzerhof (HSE). To represent the outcome of this calculation, HSEKohn-ShamBandGap can be introduced as a sub-concept of CalculatedProperty. This concept arguably  is an approximation of OpticalBandGap (but they are not equivalent concepts)"
+    },
     "attributes" : [ "external" ],
-    "id" : "15"
+    "id" : "27",
+    "superClasses" : [ "4" ]
   }, {
-    "iri" : "http://www.w3.org/ns/prov#SoftwareAgent",
-    "baseIri" : "http://www.w3.org/ns/prov",
+    "iri" : "http://qudt.org/schema/qudt/QuantityKind",
+    "baseIri" : "http://qudt.org/schema/qudt",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "SoftwareAgent"
+      "IRI-based" : "QuantityKind"
     },
     "attributes" : [ "external" ],
-    "id" : "18",
-    "superClasses" : [ "15" ]
+    "id" : "40"
+  }, {
+    "iri" : "https://w3id.org/mdo/core/Material",
+    "baseIri" : "https://w3id.org/mdo/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Material",
+      "en" : "Material"
+    },
+    "attributes" : [ "external" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://qudt.org/schema/qudt/QuantityValue",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "QuantityValue"
+    },
+    "attributes" : [ "external" ],
+    "id" : "53"
   } ],
   "property" : [ {
-    "id" : "3",
+    "id" : "0",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "10",
-    "type" : "owl:datatypeProperty"
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "11",
     "type" : "owl:datatypeProperty"
   }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "14",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "17",
-    "type" : "owl:someValuesFrom"
-  }, {
-    "id" : "19",
+    "id" : "18",
     "type" : "owl:objectProperty"
   }, {
     "id" : "20",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "21",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "22",
-    "type" : "owl:datatypeProperty"
-  }, {
     "id" : "23",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "24",
     "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "46",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:datatypeProperty"
   } ],
   "propertyAttribute" : [ {
-    "iri" : "https://w3id.org/mdo/provenance/URL",
-    "baseIri" : "https://w3id.org/mdo/provenance",
+    "iri" : "http://qudt.org/schema/qudt/numericalValue",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "numericalValue"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/mdo/core/relatesToStructure",
+    "baseIri" : "https://w3id.org/mdo/core",
     "range" : "5",
     "label" : {
-      "IRI-based" : "URL",
-      "en" : "URL"
+      "IRI-based" : "relatesToStructure",
+      "en" : "relates to structure"
     },
     "domain" : "4",
     "comment" : {
-      "en" : "URL represents that a reference agent has the URL in a string."
+      "en" : "relatesToStructure represents the relationship between a property and the structures it comes from."
     },
-    "attributes" : [ "datatype" ],
+    "attributes" : [ "external", "object" ],
     "id" : "3"
   }, {
-    "iri" : "https://w3id.org/mdo/provenance/DatabaseName",
-    "baseIri" : "https://w3id.org/mdo/provenance",
-    "range" : "6",
+    "iri" : "https://w3id.org/mdo/core/hasInputStructure",
+    "baseIri" : "https://w3id.org/mdo/core",
+    "range" : "5",
     "label" : {
-      "IRI-based" : "DatabaseName",
-      "en" : "database name"
+      "IRI-based" : "hasInputStructure",
+      "en" : "has input structure"
     },
-    "domain" : "4",
+    "domain" : "7",
     "comment" : {
-      "en" : "DatabaseName represents that a reference agent has the database's name in a string."
+      "en" : "hasInputStructure represents the relationship between a calculation and the structures it takes as input."
     },
-    "attributes" : [ "datatype" ],
-    "id" : "10"
+    "attributes" : [ "external", "object" ],
+    "id" : "6"
   }, {
-    "iri" : "https://w3id.org/mdo/provenance/PublicationTitle",
-    "baseIri" : "https://w3id.org/mdo/provenance",
-    "range" : "8",
-    "label" : {
-      "IRI-based" : "PublicationTitle",
-      "en" : "publication title"
-    },
+    "range" : "10",
     "domain" : "4",
-    "comment" : {
-      "en" : "PublicationTitle represents that a reference agent has the publication's title in a string."
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://w3id.org/mdo/core/ID",
+    "baseIri" : "https://w3id.org/mdo/core",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "ID",
+      "en" : "ID"
     },
-    "attributes" : [ "datatype" ],
+    "domain" : "7",
+    "comment" : {
+      "en" : "ID represents that a calculation has the unique ID in a string."
+    },
+    "attributes" : [ "datatype", "external" ],
     "id" : "11"
   }, {
-    "range" : "15",
-    "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "14"
-  }, {
-    "iri" : "http://www.w3.org/ns/prov#wasAssociatedWith",
-    "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "18",
+    "iri" : "https://w3id.org/mdo/core/hasQuantityValue",
+    "baseIri" : "https://w3id.org/mdo/core",
+    "range" : "1",
     "label" : {
-      "IRI-based" : "wasAssociatedWith"
+      "IRI-based" : "hasQuantityValue",
+      "en" : "has quantity value"
     },
-    "domain" : "16",
-    "attributes" : [ "someValues", "object", "external" ],
-    "id" : "17"
-  }, {
-    "iri" : "http://www.w3.org/ns/prov#wasAttributedTo",
-    "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "13",
-    "label" : {
-      "IRI-based" : "wasAttributedTo"
+    "domain" : "1",
+    "comment" : {
+      "en" : "hasQuantityValue represents the relationship between a property and quantity value it takes."
     },
-    "domain" : "13",
-    "attributes" : [ "object", "external" ],
-    "id" : "19"
+    "attributes" : [ "external", "object" ],
+    "id" : "13"
   }, {
     "iri" : "https://w3id.org/mdo/provenance/AuthorName",
     "baseIri" : "https://w3id.org/mdo/provenance",
-    "range" : "7",
+    "range" : "16",
     "label" : {
       "IRI-based" : "AuthorName",
       "en" : "author name"
     },
-    "domain" : "4",
+    "domain" : "15",
     "comment" : {
       "en" : "AuthorName represents that a reference agent has the author's name in a string."
     },
     "attributes" : [ "datatype" ],
-    "id" : "20"
+    "id" : "14"
+  }, {
+    "iri" : "http://qudt.org/schema/qudt/unit",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "unit"
+    },
+    "domain" : "19",
+    "attributes" : [ "external", "object" ],
+    "id" : "18"
   }, {
     "iri" : "https://w3id.org/mdo/provenance/SoftwareName",
     "baseIri" : "https://w3id.org/mdo/provenance",
-    "range" : "9",
+    "range" : "22",
     "label" : {
       "IRI-based" : "SoftwareName",
       "en" : "software name"
     },
     "cardinality" : "1",
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "SoftwareName represents that a software agent has the name in a string."
     },
     "attributes" : [ "datatype" ],
-    "id" : "21"
+    "id" : "20"
   }, {
-    "iri" : "https://w3id.org/mdo/provenance/PublicationDateTime",
-    "baseIri" : "https://w3id.org/mdo/provenance",
-    "range" : "12",
-    "label" : {
-      "IRI-based" : "PublicationDateTime",
-      "en" : "publication dateTime"
-    },
-    "domain" : "4",
-    "comment" : {
-      "en" : "PublicationDateTime represents that a reference agent has the date time in a dateTime."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "22"
+    "range" : "4",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "23"
+  }, {
+    "range" : "25",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
+  }, {
+    "range" : "4",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "26"
   }, {
     "iri" : "https://w3id.org/mdo/provenance/DOI",
     "baseIri" : "https://w3id.org/mdo/provenance",
-    "range" : "2",
+    "range" : "29",
     "label" : {
       "IRI-based" : "DOI",
       "en" : "DOI"
     },
-    "domain" : "4",
+    "domain" : "15",
     "comment" : {
       "en" : "DOI represents that a reference agent has the DOI in a string."
     },
     "attributes" : [ "datatype" ],
-    "id" : "23"
+    "id" : "28"
   }, {
-    "range" : "15",
-    "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "24"
+    "range" : "25",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "31"
+  }, {
+    "iri" : "https://w3id.org/mdo/core/hasInputProperty",
+    "baseIri" : "https://w3id.org/mdo/core",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasInputProperty",
+      "en" : "has input property"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "hasInputProperty represents the relationship between a calculation and the properties it takes as input."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "34"
+  }, {
+    "iri" : "https://w3id.org/mdo/core/hasOutputStructure",
+    "baseIri" : "https://w3id.org/mdo/core",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasOutputStructure",
+      "en" : "has output structure"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "hasOutputStructure represents the relationship between a calculation and the structures it outputs."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "https://w3id.org/mdo/provenance/URL",
+    "baseIri" : "https://w3id.org/mdo/provenance",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "URL",
+      "en" : "URL"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "URL represents that a reference agent has the URL."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://qudt.org/schema/qudt/hasQuantityKind",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "hasQuantityKind"
+    },
+    "domain" : "30",
+    "attributes" : [ "external", "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "https://w3id.org/mdo/provenance/DatabaseName",
+    "baseIri" : "https://w3id.org/mdo/provenance",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "DatabaseName",
+      "en" : "database name"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "DatabaseName represents that a reference agent has the database's name in a string."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "42"
+  }, {
+    "iri" : "https://w3id.org/mdo/provenance/PublicationTitle",
+    "baseIri" : "https://w3id.org/mdo/provenance",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "PublicationTitle",
+      "en" : "publication title"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "PublicationTitle represents that a reference agent has the publication's title in a string."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "43"
+  }, {
+    "range" : "27",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#wasAssociatedWith",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "wasAssociatedWith"
+    },
+    "domain" : "7",
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#wasAttributedTo",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "wasAttributedTo"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "47"
+  }, {
+    "iri" : "https://w3id.org/mdo/core/relatesToMaterial",
+    "baseIri" : "https://w3id.org/mdo/core",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "relatesToMaterial",
+      "en" : "relates to material"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "relatesToMaterial represents the relationship between a structure and the materials it comes from."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "48"
+  }, {
+    "iri" : "https://w3id.org/mdo/core/PropertyName",
+    "baseIri" : "https://w3id.org/mdo/core",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "PropertyName",
+      "en" : "property name"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "PropertyName represents that a property has the name in a string."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "50"
+  }, {
+    "iri" : "https://w3id.org/mdo/core/hasOutputCalculatedProperty",
+    "baseIri" : "https://w3id.org/mdo/core",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "hasOutputCalculatedProperty",
+      "en" : "has output calculated property"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "hasOutputCalculatedProperty represents the relationship between a calculation and the calculated properties it outputs."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://qudt.org/schema/qudt/quantityValue",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "quantityValue"
+    },
+    "domain" : "32",
+    "attributes" : [ "external", "object" ],
+    "id" : "52"
+  }, {
+    "iri" : "https://w3id.org/mdo/provenance/PublicationDateTime",
+    "baseIri" : "https://w3id.org/mdo/provenance",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "PublicationDateTime",
+      "en" : "publication dateTime"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "PublicationDateTime represents that a reference agent has the date time in a dateTime."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "54"
   } ]
 }

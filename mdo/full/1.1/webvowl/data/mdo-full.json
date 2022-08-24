@@ -425,11 +425,11 @@
       "IRI-based" : "string"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "29",
     "label" : {
-      "IRI-based" : "string"
+      "IRI-based" : "anyURI"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
@@ -1998,7 +1998,7 @@
     },
     "domain" : "46",
     "comment" : {
-      "en" : "URL represents that a reference agent has the URL in a string."
+      "en" : "URL represents that a reference agent has the URL."
     },
     "attributes" : [ "external", "datatype" ],
     "id" : "128"
