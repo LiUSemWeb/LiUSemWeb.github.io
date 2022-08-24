@@ -15,7 +15,7 @@
         <owl:versionIRI rdf:resource="https://w3id.org/mdo/core/1.1/"/>
         <dcterms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Patrick Lambrix</dcterms:contributor>
         <dcterms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rickard Armiento</dcterms:contributor>
-        <dcterms:created>2019-11-07</dcterms:created>
+        <dcterms:created>2022-08-02</dcterms:created>
         <dcterms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Huanyu Li</dcterms:creator>
         <dcterms:license>https://github.com/LiUSemWeb/Materials-Design-Ontology/blob/master/LICENSE</dcterms:license>
         <dcterms:title xml:lang="en">Materials Design Ontology - Core Module</dcterms:title>
