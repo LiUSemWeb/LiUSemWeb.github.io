@@ -644,14 +644,14 @@
   }, {
     "iri" : "https://w3id.org/mdo/provenance/DOI",
     "baseIri" : "https://w3id.org/mdo/provenance",
-    "range" : "29",
+    "range" : "36",
     "label" : {
       "IRI-based" : "DOI",
       "en" : "DOI"
     },
     "domain" : "15",
     "comment" : {
-      "en" : "DOI represents that a reference agent has the DOI in a string."
+      "en" : "DOI represents that a reference agent has the DOI."
     },
     "attributes" : [ "datatype" ],
     "id" : "28"
